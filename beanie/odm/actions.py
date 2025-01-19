@@ -25,7 +25,7 @@ P = ParamSpec("P")
 R = TypeVar("R")
 
 AsyncDocMethod: TypeAlias = Callable[
-    Concatenate[DocType, P], Coroutine[Any, Any, R]
+    Concatenate["DocType", P], Coroutine[Any, Any, R]
 ]
 
 
